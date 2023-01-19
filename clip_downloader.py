@@ -1,7 +1,7 @@
 import json, requests, urllib3, os
 from functools import reduce
 
-forbidden_chars = "%:/\\<>*?？|！\n"
+forbidden_chars = "%:/\\<>*?？|！\n\""
 thread_number = 5
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 dl_URL = "https://minbird.kr/static/videos/processed/clips/{0}.mp4"
